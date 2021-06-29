@@ -5,12 +5,13 @@
     margin-bottom: 20px;
   }
   
-  .fileUpload {
+.fileUpload {
     position: relative;
     overflow: hidden;
     margin: 10px;
-  }
-  .fileUpload input.upload {
+    display: none;
+}
+.fileUpload input.upload {
     position: absolute;
     top: 0;
     right: 0;
@@ -19,8 +20,9 @@
     font-size: 20px;
     cursor: pointer;
     opacity: 0;
+    display: none;
     filter: alpha(opacity=0);
-  }
+}
 
   /* skin.css Style*/
   .upload-drop-zone {
@@ -33,4 +35,7 @@
   .upload-drop-zone.drop {
     color: #222;
     border-color: #222;
+  }
+  input[id="id_img"]{
+    display: none;
   }
